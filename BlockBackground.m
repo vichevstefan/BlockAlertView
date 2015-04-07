@@ -24,7 +24,7 @@ static BlockBackground *_sharedInstance = nil;
     @synchronized(self) {
         if (_sharedInstance == nil) {
 //            [[[self alloc] init] autorelease];
-            [[self alloc] init];
+            _sharedInstance = [[self alloc] init];
         }
     }
 
